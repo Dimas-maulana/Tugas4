@@ -36,7 +36,7 @@ class DisplayList extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children:<Widget>[
-                            Text(user.name, style: const TextStyle(fontSize: 28),),
+                            Text(user.name, style: const TextStyle(fontSize: 28,),),
                             Text("Role: "+user.role, style: const TextStyle(fontSize: 22),),
                             Text("Nationality: "+user.nationality, style: const TextStyle(fontSize: 22),),
                             Text("Gender: "+user.gender, style: const TextStyle(fontSize: 22),),

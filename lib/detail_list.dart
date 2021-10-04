@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'textfield_form.dart';
 import 'listdata.dart';
 
@@ -48,14 +49,22 @@ class FormDetail extends StatelessWidget {
               ),
               Center(
                 child: ElevatedButton(
-                    onPressed: (){
-                      Navigator.pop(context);
-                      },
-                    child: const Text("Kembali"),
+                      child: const Text("Kembali"),
+                      onPressed: (){
+                        Navigator.pop(context);
+                        },
+                  ),
+              ),
+              Center(
+                child: ElevatedButton(
+                    child: const Text('Keluar'),
+                    onPressed: () {
+                      SystemNavigator.pop();
+                    },
                 ),
               ),
-            ]
-          )
+            ],
+          ),
         ),
       ),
     );
